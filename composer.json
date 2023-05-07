@@ -1,0 +1,17 @@
+{
+    "name": "samuel/gpt-products",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel-Mil",
+            "email": "samuel.mil.mar@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
