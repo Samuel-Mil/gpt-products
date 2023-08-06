@@ -4,6 +4,8 @@ namespace App\Core;
 
 class View
 {
+    public string $styleSheet = '';
+
     public function render($view, array $params = [])
     {
         $page= $this->rederOnlyView($view, $params);
@@ -33,5 +35,15 @@ class View
         ob_start();
         include_once Application::$ROOT_DIR. "/Views/pages/$path.php";
         return ob_get_clean();
+    }
+
+    public function setStyleSheet(string $styleSheet)
+    {
+        $this->styleSheet = $styleSheet;
+    }
+
+    public function getStyleSheet()
+    {
+        return $_ENV['APP_URL'].'//css/'.$this->styleSheet.'.css';
     }
 }

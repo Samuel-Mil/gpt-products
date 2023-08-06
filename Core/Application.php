@@ -31,6 +31,7 @@ class Application
         $this->session = new Session();
     }
 
+
     public function run()
     {
         try {

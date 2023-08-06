@@ -1,0 +1,148 @@
+html,body{
+    background-color: #f2f2f2;
+}
+
+aside{
+    width: 20%;
+    height: 100%;
+    background-color: #5F7161;
+    color: #f1f1f1;
+    float: left;
+}
+
+aside >header{
+    border-bottom: 2px solid #49574b;
+    width: 100%;
+    height: 47%;
+
+}
+
+aside >header h1{
+    font-weight: normal;
+    padding: 10px 0;
+    background-color: #49574b;
+    text-align: center;
+}
+
+aside >header main{
+    margin: 10px 0;
+    text-align: center;
+}
+
+aside >header main img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #6D8B74;
+}
+
+aside > main{
+    width: 100%;
+    height: 53%;
+    overflow-y: auto;
+}
+
+aside > main ul{
+    list-style-type: none;
+}
+
+aside > main ul h1{
+    font-weight: normal;
+    padding: 10px 0;
+    background-color: #49574b;
+    padding-left: 10px;
+}
+
+aside > main ul li{
+    background-color: #6e8070;
+    padding: 10px;
+    border-bottom: 1px solid #49574b;
+}
+
+aside > main ul li:hover{
+    transition: 100ms;
+    opacity: 70%;
+}
+
+aside > main ul li a{
+    color: #f1f1f1;
+    text-decoration: none;
+    display: block;
+}
+
+header.main_aside{
+    width: 80%;
+    height: 10%;
+    background-color: #5F7161;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-left: 4px solid #6e8070;
+}
+
+header.main_aside h1{
+    font-weight: normal;
+    color: #f1f1f1;
+}
+
+header.main_aside a{
+    color: #f1f1f1;
+    font-size: 25px;
+}
+
+section.page_container{
+    width: 80%;
+    height: 90%;
+    padding: 10px;
+    float: left;
+    overflow-y: auto;
+
+}
+
+.page{
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    color: #444;
+}
+
+.page .page_title{
+    font-weight: lighter;
+    font-size: 30px;
+    border-bottom: 1px solid #444;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+.page .input_box{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.page input[type=text], select{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+.page textarea{
+    width: 100%;
+    min-height: 200px;
+    resize: horizontal;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.page input[type=submit], button{
+    width: 130px;
+    height: 30px;
+    background-color: #6D8B74;
+    cursor: pointer;
+    border: 0;
+    color: #f1f1f1;
+}
