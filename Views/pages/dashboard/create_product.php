@@ -6,30 +6,35 @@ $this->setStyleSheet('');
 <div class="page">
     <h1 class="page_title">Create Product</h1>
     
-    <form>
+    <form method="POST" action="<?=$_ENV['APP_URL']?>/register/product">
         <div class="input_box">
             <label>Name:</label>
-            <input type="text" placeholder="Name...">
+            <input type="text" name="name" placeholder="Name...">
         </div>
         <div class="input_box">
-            <label>Category:</label>
-            <input type="text" placeholder="Category...">
+            <label>Price:</label>
+            <input type="number" name="price" placeholder="Price...">
+        </div>
+        
+        <div class="input_box">
+            <label>Description:</label>
+            <textarea name="description" placeholder="About..."></textarea>
         </div>
         <div class="input_box">
-            <label>About:</label>
-            <textarea placeholder="About..."></textarea>
+            <label>Image:</label>
+            <input onchange="readURL(this); "type="file" accept="image/x-png,image/jpeg" name="image" placeholder="Select a Image...">
+            <div class="image_preview">
+                <div class="no_image">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Preview</span>
+                </div>
+                <img src="" alt="">
+            </div>
         </div>
         <div class="input_box">
-            <label>Type:</label>
-            <select id="cars" name="cars">
-                <option value="volvo">Select</option>
-                <option value="volvo">Digital Art</option>
-                <option value="saab">Fisic Art</option>
-                <option value="mercedes">Bio Art</option>
-            </select>
-        </div>
-        <div class="input_box">
-            <input type="submit" value="Submit">
+            <input type="submit" name="action" value="Submit">
         </div>
     </form>
 </div>
+
+<script defer src="<?=$_ENV['APP_URL']?>/js/image_preview.js"></script>

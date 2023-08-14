@@ -22,6 +22,9 @@ class Database
                 self::$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
             }catch(\Exception $e){
                 echo '<h3>Erro ao conectar!</h3>';
+                echo "<pre>";
+                var_dump($e->getMessage());
+                echo "</pre>";
             }
         }
 
